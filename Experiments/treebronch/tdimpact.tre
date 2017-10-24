@@ -1,0 +1,10 @@
+1		Tr%Nimp! количество внешних воздействий i
+1		номер сосуда Tr%I(i)%BrID
+2		тип воздействия (1-кровопотеря, 2-приток вещества)Tr%I(i)%IType ! impact type - must be substance
+1		тип геометрии (точечный)Tr%I(i)%GType ! Geometry type - must be lumped
+1		длина по сосуду (в %)Tr%I(i)%len   ! length from the beginning (relatively to the total length)
+2		номер вещества Tr%I(i)%SubstID ! substance number - must be 1
+0.0		поток крови при кровопотере или значение Tr%I(i)%alfa  ! 0.3 or 0.02
+4000000		начало воздействия  Tr%I(i)%Tstart ! start new concentration inflow
+4000000		окончание воздействия   Tr%I(i)%Tend
+0.18    	значение диффузии  Tr%I(i)%D

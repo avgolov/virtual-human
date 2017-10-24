@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="HumanSysBuilders">
+      <UniqueIdentifier>{9d811ce8-7f21-4b79-8886-fc146856b928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Asthma">
+      <UniqueIdentifier>{fe523232-15df-4597-bb85-2e653955d894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Emphysema">
+      <UniqueIdentifier>{e09fdbec-98e9-44fe-b85c-ab31d528b69b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hipoxia">
+      <UniqueIdentifier>{d6f2aee6-6f39-4fc0-920c-33daf7ceee09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hipoxia\Lump">
+      <UniqueIdentifier>{fc35819b-0d5a-4bc0-b0ff-0d1270c99ff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sport">
+      <UniqueIdentifier>{d7e40e9e-4aad-4631-9679-e525dbafe13a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hipoxia\LumpLungFullBlood">
+      <UniqueIdentifier>{386dfd15-68df-466b-b151-65f6eecb1d01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sport\IntervalTraining">
+      <UniqueIdentifier>{bba000e0-3892-4bb5-80e2-091d836a0354}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HumanSysBuilders\IHumanSysBuilder.h">
+      <Filter>HumanSysBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanSysBuilders\ISysBuilder.h">
+      <Filter>HumanSysBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="HumanSysBuilders\HumanSysBuilder.h">
+      <Filter>HumanSysBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="IExperiment.h" />
+    <ClInclude Include="Asthma\AsthmaExperiment.h">
+      <Filter>Asthma</Filter>
+    </ClInclude>
+    <ClInclude Include="Asthma\AsthmaHumanSysBuilder.h">
+      <Filter>Asthma</Filter>
+    </ClInclude>
+    <ClInclude Include="Emphysema\EmphysemaExperiment.h">
+      <Filter>Emphysema</Filter>
+    </ClInclude>
+    <ClInclude Include="Emphysema\EmphysemaHumanSysBuilder.h">
+      <Filter>Emphysema</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\HipoxiaExperiment.h">
+      <Filter>Hipoxia</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\HipoxiaHumanSysBuilder.h">
+      <Filter>Hipoxia</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\Lump\LumpHipoxiaExperiment.h">
+      <Filter>Hipoxia\Lump</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\Lump\LumpHumanSysBuilder.h">
+      <Filter>Hipoxia\Lump</Filter>
+    </ClInclude>
+    <ClInclude Include="Sport\IncremetalLoadTest.h">
+      <Filter>Sport</Filter>
+    </ClInclude>
+    <ClInclude Include="Sport\IncremetalLoadSysBuilder.h">
+      <Filter>Sport</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\LumpLungFullBlood\LlFbHipoxiaExperiment.h">
+      <Filter>Hipoxia\LumpLungFullBlood</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipoxia\LumpLungFullBlood\LlFbHipoxiaSysBuilder.h">
+      <Filter>Hipoxia\LumpLungFullBlood</Filter>
+    </ClInclude>
+    <ClInclude Include="Sport\IntervalTraining\IntervalLoadSysBuilder.h">
+      <Filter>Sport\IntervalTraining</Filter>
+    </ClInclude>
+    <ClInclude Include="Sport\IntervalTraining\IntervalLoad.h">
+      <Filter>Sport\IntervalTraining</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HumanSysBuilders\HumanSysBuilder.cpp">
+      <Filter>HumanSysBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="Asthma\AsthmaExperiment.cpp">
+      <Filter>Asthma</Filter>
+    </ClCompile>
+    <ClCompile Include="Asthma\AsthmaHumanSysBuilder.cpp">
+      <Filter>Asthma</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Emphysema\EmphysemaExperiment.cpp">
+      <Filter>Emphysema</Filter>
+    </ClCompile>
+    <ClCompile Include="Emphysema\EmphysemaHumanSysBuilder.cpp">
+      <Filter>Emphysema</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\HipoxiaExperiment.cpp">
+      <Filter>Hipoxia</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\HipoxiaHumanSysBuilder.cpp">
+      <Filter>Hipoxia</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\Lump\LumpHipoxiaExperiment.cpp">
+      <Filter>Hipoxia\Lump</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\Lump\LumpHumanSysBuilder.cpp">
+      <Filter>Hipoxia\Lump</Filter>
+    </ClCompile>
+    <ClCompile Include="Sport\IncremetalLoadTest.cpp">
+      <Filter>Sport</Filter>
+    </ClCompile>
+    <ClCompile Include="Sport\IncremetalLoadSysBuilder.cpp">
+      <Filter>Sport</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\LumpLungFullBlood\LlFbHipoxiaExperiment.cpp">
+      <Filter>Hipoxia\LumpLungFullBlood</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipoxia\LumpLungFullBlood\LlFbHipoxiaSysBuilder.cpp">
+      <Filter>Hipoxia\LumpLungFullBlood</Filter>
+    </ClCompile>
+    <ClCompile Include="Sport\IntervalTraining\IntervalLoadSysBuilder.cpp">
+      <Filter>Sport\IntervalTraining</Filter>
+    </ClCompile>
+    <ClCompile Include="Sport\IntervalTraining\IntervalLoad.cpp">
+      <Filter>Sport\IntervalTraining</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

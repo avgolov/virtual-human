@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DE83327C-7DEA-4496-8667-945654F5E262}</ProjectGuid>
+    <RootNamespace>SystemModels</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\tbb\include;H:\SoftwareProjects\thirdparty\vs2013\x64\eigen-eigen-07105f7124f9;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\tbb\lib\intel64\vc12;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\tbb\include;H:\SoftwareProjects\thirdparty\vs2013\x64\eigen-eigen-07105f7124f9;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\tbb\lib\intel64\vc12;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Builders\HumanSysBuilder.cpp" />
+    <ClCompile Include="Builders\WorkHumanSysBuilder.cpp" />
+    <ClCompile Include="Connections\BloodRespiratory\BloodRespiratoryCnFactory.cpp" />
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespAvgTankBloodCn.cpp" />
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespBodyBioChem.cpp" />
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespBodyBloodCn.cpp" />
+    <ClCompile Include="Connections\BloodTissue\BaseBloodTissueCn.cpp" />
+    <ClCompile Include="Connections\BloodTissue\BloodTissueCnFactory.cpp" />
+    <ClCompile Include="Connections\BloodTissue\BodyBioChemTissueCn.cpp" />
+    <ClCompile Include="Connections\BloodTissue\BodyBloodBaseTissueCn.cpp" />
+    <ClCompile Include="Connections\NervousBlood\NervousBloodCnFactory.cpp" />
+    <ClCompile Include="Connections\NervousRespiratory\NervousRespiratoryCnFactory.cpp" />
+    <ClCompile Include="Connections\NervousTissue\NervousTissueCnFactory.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Postprocessing\PostprocessUtility.h" />
+    <ClCompile Include="Systems\BloodSystem\AvgTankBlood.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BbEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BioChemConst.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\Co2BbEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\O2HbEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlCo2BbEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlLaEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlO2HbEquations.cpp" />
+    <ClCompile Include="Systems\BloodSystem\CompartmentsBloodSys.cpp" />
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BaseBiochemistryModel.cpp" />
+    <ClCompile Include="Systems\BloodSystem\BodyBioChemBloodSys.cpp" />
+    <ClCompile Include="Systems\BloodSystem\BodyBloodSys.cpp" />
+    <ClCompile Include="Systems\BloodSystem\BloodCompartment.cpp" />
+    <ClCompile Include="Systems\HumanSys.cpp" />
+    <ClCompile Include="Systems\ImplicitHumanSys.cpp" />
+    <ClCompile Include="Systems\LumpImplicitHumanSys.cpp" />
+    <ClCompile Include="Systems\NervousSystem\BloodDivNervousSys.cpp" />
+    <ClCompile Include="Systems\NervousSystem\WorkLoadNervousSys.cpp" />
+    <ClCompile Include="Systems\RespiratorySystem\LumpRespSys.cpp" />
+    <ClCompile Include="Systems\RespiratorySystem\MiptNet1DRespSys.cpp" />
+    <ClCompile Include="Systems\StandartHumanSys.cpp" />
+    <ClCompile Include="Systems\TissueSystem\BaseTissueSys.cpp" />
+    <ClCompile Include="Systems\WorkLoadHumanSys.cpp" />
+    <ClCompile Include="Systems\WorkLoad\ZoneWorkLoad.cpp" />
+    <ClCompile Include="TimeSpan.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Builders\HumanSysBuilder.h" />
+    <ClInclude Include="Builders\IHumanSysBuilder.h" />
+    <ClInclude Include="Builders\ISysBuilder.h" />
+    <ClInclude Include="Builders\WorkHumanSysBuilder.h" />
+    <ClInclude Include="Connections\BloodRespiratory\BloodRespiratoryCnFactory.h" />
+    <ClInclude Include="Connections\BloodRespiratory\IBloodRespiratoryCn.h" />
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespAvgTankBloodCn.h" />
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespBodyBioChem.h" />
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespBodyBloodCn.h" />
+    <ClInclude Include="Connections\BloodTissue\BaseBloodTissueCn.h" />
+    <ClInclude Include="Connections\BloodTissue\BodyBioChemTissueCn.h" />
+    <ClInclude Include="Connections\BloodTissue\BodyBloodBaseTissueCn.h" />
+    <ClInclude Include="Connections\BloodTissue\IBloodTissueCn.h" />
+    <ClInclude Include="Connections\BloodTissue\BloodTissueCnFactory.h" />
+    <ClInclude Include="Connections\IConnection.h" />
+    <ClInclude Include="Connections\IConnectionFactory.h" />
+    <ClInclude Include="Connections\NervousBlood\BaseNervousBloodCn.h" />
+    <ClInclude Include="Connections\NervousBlood\INervousBloodCn.h" />
+    <ClInclude Include="Connections\NervousBlood\NervousBloodCnFactory.h" />
+    <ClInclude Include="Connections\NervousRespiratory\BaseNervousRespiratoryCn.h" />
+    <ClInclude Include="Connections\NervousRespiratory\INervousRespiratoryCn.h" />
+    <ClInclude Include="Connections\NervousRespiratory\NervousRespiratoryCnFactory.h" />
+    <ClInclude Include="Connections\NervousTissue\BaseNervousTissueCn.h" />
+    <ClInclude Include="Connections\NervousTissue\INervousTissueCn.h" />
+    <ClInclude Include="Connections\NervousTissue\NervousTissueCnFactory.h" />
+    <ClInclude Include="Postprocessing\BasePostprocess.h" />
+    <ClInclude Include="Postprocessing\DioxProdPostprocess.h" />
+    <ClInclude Include="Postprocessing\HipoxiaPostprocess.h" />
+    <ClInclude Include="Postprocessing\IPostprocess.h" />
+    <ClInclude Include="Postprocessing\ISaveCondition.h" />
+    <ClInclude Include="Postprocessing\OxyConsPostprocess.h" />
+    <ClInclude Include="Postprocessing\TimeSavecondition.h" />
+    <ClInclude Include="Systems\BloodSystem\AvgTankBlood.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BbEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BioChemConst.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\Co2BbEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\O2HbEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlCo2BbEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlLaEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlO2HbEquations.h" />
+    <ClInclude Include="Systems\BloodSystem\CompartmentsBloodSys.h" />
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BaseBiochemistryModel.h" />
+    <ClInclude Include="Systems\BloodSystem\BodyBioChemBloodSys.h" />
+    <ClInclude Include="Systems\BloodSystem\BodyBloodSys.h" />
+    <ClInclude Include="Systems\BloodSystem\BloodCompartment.h" />
+    <ClInclude Include="Systems\BloodSystem\IBloodSys.h" />
+    <ClInclude Include="Systems\HumanSys.h" />
+    <ClInclude Include="Systems\IHumanSys.h" />
+    <ClInclude Include="Systems\ImplicitHumanSys.h" />
+    <ClInclude Include="Systems\ISystem.h" />
+    <ClInclude Include="Systems\LumpImplicitHumanSys.h" />
+    <ClInclude Include="Systems\NervousSystem\BloodDivNervousSys.h" />
+    <ClInclude Include="Systems\NervousSystem\INervousSys.h" />
+    <ClInclude Include="Systems\NervousSystem\WorkLoadNervousSys.h" />
+    <ClInclude Include="Systems\RespiratorySystem\IAirEnv.h" />
+    <ClInclude Include="Systems\RespiratorySystem\IRespiratorySys.h" />
+    <ClInclude Include="Systems\RespiratorySystem\LumpRespSys.h" />
+    <ClInclude Include="Systems\RespiratorySystem\MiptNet1DRespSys.h" />
+    <ClInclude Include="Systems\RespiratorySystem\NormAirEnv.h" />
+    <ClInclude Include="Systems\StandartHumanSys.h" />
+    <ClInclude Include="Systems\TissueSystem\BaseTissueSys.h" />
+    <ClInclude Include="Systems\TissueSystem\ITissueSys.h" />
+    <ClInclude Include="Systems\WorkLoadHumanSys.h" />
+    <ClInclude Include="Systems\WorkLoad\IntervalWorkLoad.h" />
+    <ClInclude Include="Systems\WorkLoad\IWorkLoad.h" />
+    <ClInclude Include="Systems\WorkLoad\StandartWorkLoad.h" />
+    <ClInclude Include="Systems\WorkLoad\StoreWorkLoad.h" />
+    <ClInclude Include="Systems\WorkLoad\ZoneWorkLoad.h" />
+    <ClInclude Include="TimeSpan.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiptNet1D.Model\MiptNet1D.Model.vcxproj">
+      <Project>{26111156-ac82-401a-8958-8ff6045468e6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

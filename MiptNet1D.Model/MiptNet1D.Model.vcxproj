@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26111156-AC82-401A-8958-8FF6045468E6}</ProjectGuid>
+    <RootNamespace>MiptNet1DModel</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\tbb\include;E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;E:\SoftwareProjects\thirdparty\vs2013\x64\eigen-eigen-1306d75b4a21;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;C:\Program Files %28x86%29\tbb\lib\intel64\vc12;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>H:\SoftwareProjects\thirdparty\vs2013\x64\eigen-eigen-07105f7124f9;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;C:\Program Files %28x86%29\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\tbb\lib\intel64\vc12;E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>H:\SoftwareProjects\thirdparty\vs2013\x64\eigen-eigen-07105f7124f9;H:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0;C:\Program Files %28x86%29\tbb\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files %28x86%29\tbb\lib\intel64\vc12;E:\SoftwareProjects\thirdparty\vs2013\x64\boost_1_59_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BlockEquations\AbstractEquation.h" />
+    <ClInclude Include="BlockEquations\MassTransfer\LungsMtEquation.h" />
+    <ClInclude Include="BlockEquations\MassTransfer\MassTransferEquation.h" />
+    <ClInclude Include="BlockEquations\Motion\Breath\AbstractBreath.h" />
+    <ClInclude Include="BlockEquations\Motion\Breath\StandartBreath.h" />
+    <ClInclude Include="BlockEquations\Motion\FluidKnotsSetEquations.h" />
+    <ClInclude Include="BlockEquations\Motion\FluidStateEquation.h" />
+    <ClInclude Include="BlockEquations\Motion\IncompFluidEquation.h" />
+    <ClInclude Include="BlockEquations\Motion\LungsFluidEquation.h" />
+    <ClInclude Include="BlockEquations\Numerics\CauchyProblemMethod.h" />
+    <ClInclude Include="BlockEquations\Numerics\HybridHypEquation.h" />
+    <ClInclude Include="BlockEquations\Numerics\HyperbolicEquation.h" />
+    <ClInclude Include="BlockEquations\Numerics\NewtonMethod.h" />
+    <ClInclude Include="BlockEquations\Numerics\RungeKutta23Method.h" />
+    <ClInclude Include="BlockEquations\Numerics\SweepMethod.h" />
+    <ClInclude Include="NetTopology\Loaders\TreeDataLoader.h" />
+    <ClInclude Include="NetTopology\Model\Alveole.h" />
+    <ClInclude Include="NetTopology\Model\BaseSubstance.h" />
+    <ClInclude Include="NetTopology\Model\BaseTree.h" />
+    <ClInclude Include="NetTopology\Model\Branch.h" />
+    <ClInclude Include="NetTopology\Model\BranchPoint.h" />
+    <ClInclude Include="NetTopology\Model\BronchTree.h" />
+    <ClInclude Include="NetTopology\Model\Knot.h" />
+    <ClInclude Include="NetTopology\Results\AbstractResultHandler.h" />
+    <ClInclude Include="NetTopology\Results\BreathResultHandler.h" />
+    <ClInclude Include="NetTopology\Results\BreathStoreCondition.h" />
+    <ClInclude Include="NetTopology\Results\BronchTreeResultHandler.h" />
+    <ClInclude Include="NetTopology\Results\IStoreCondition.h" />
+    <ClInclude Include="NetTopology\Results\OxyAlvVolumeHandler.h" />
+    <ClInclude Include="NetTopology\Results\OxyConsResultHandler.h" />
+    <ClInclude Include="NetTopology\Results\OxyTreeVolumeHandler.h" />
+    <ClInclude Include="NetTopology\Results\ResultHandlerUtility.h" />
+    <ClInclude Include="NetTopology\Results\TidalVolumeHandler.h" />
+    <ClInclude Include="NetTopology\Results\TimeStoreCondition.h" />
+    <ClInclude Include="TreeBuilders\FullBronchTreeBuilder.h" />
+    <ClInclude Include="TreeBuilders\IBronchTreeBuilder.h" />
+    <ClInclude Include="TreeBuilders\LungsNTreeBuilder.h" />
+    <ClInclude Include="TreeBuilders\Lungs8TreeBuilder.h" />
+    <ClInclude Include="TreeBuilders\SimpleBronchTreeBuilder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BlockEquations\MassTransfer\MassTransferEquation.cpp" />
+    <ClCompile Include="BlockEquations\Motion\Breath\StandartBreath.cpp" />
+    <ClCompile Include="BlockEquations\Motion\IncompFluidEquation.cpp" />
+    <ClCompile Include="BlockEquations\Motion\LungsFluidEquation.cpp" />
+    <ClCompile Include="NetTopology\Loaders\TreeDataLoader.cpp" />
+    <ClCompile Include="TreeBuilders\FullBronchTreeBuilder.cpp" />
+    <ClCompile Include="TreeBuilders\LungsNTreeBuilder.cpp" />
+    <ClCompile Include="TreeBuilders\Lungs8TreeBuilder.cpp" />
+    <ClCompile Include="TreeBuilders\SimpleBronchTreeBuilder.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

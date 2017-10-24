@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="NetTopology">
+      <UniqueIdentifier>{521916b2-9d35-4907-bfb2-16591702b7b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetTopology\Loaders">
+      <UniqueIdentifier>{feb12c56-b2e9-4cc7-b689-c26a99f67f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetTopology\Model">
+      <UniqueIdentifier>{bcf0fa33-1401-4c52-9369-6aca679cf3e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEquations">
+      <UniqueIdentifier>{5974dd17-5974-42cf-904d-390719f2ac7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEquations\Motion">
+      <UniqueIdentifier>{616f92cb-30a2-432d-a340-7e56e283a910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEquations\Motion\Breath">
+      <UniqueIdentifier>{2f54737e-d053-4dee-8c02-dd4c22a8598c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEquations\MassTransfer">
+      <UniqueIdentifier>{5bdc9c9d-26f0-4e8c-9728-09ca80cfcae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetTopology\Results">
+      <UniqueIdentifier>{1d764235-4693-45b9-8810-d2adbe5a3345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BlockEquations\Numerics">
+      <UniqueIdentifier>{60ce5be9-1102-4fc5-ac06-b817e924b50c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NetTopology\TreeBuilders">
+      <UniqueIdentifier>{e342a9ef-125c-403b-9f16-b86219387849}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NetTopology\Model\Alveole.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\BaseTree.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\Branch.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\BranchPoint.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\BronchTree.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\Knot.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Loaders\TreeDataLoader.h">
+      <Filter>NetTopology\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Model\BaseSubstance.h">
+      <Filter>NetTopology\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\AbstractEquation.h">
+      <Filter>BlockEquations</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\FluidKnotsSetEquations.h">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\FluidStateEquation.h">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\IncompFluidEquation.h">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\LungsFluidEquation.h">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\Breath\AbstractBreath.h">
+      <Filter>BlockEquations\Motion\Breath</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Motion\Breath\StandartBreath.h">
+      <Filter>BlockEquations\Motion\Breath</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\MassTransfer\LungsMtEquation.h">
+      <Filter>BlockEquations\MassTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\MassTransfer\MassTransferEquation.h">
+      <Filter>BlockEquations\MassTransfer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\AbstractResultHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\BreathResultHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\BreathStoreCondition.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\BronchTreeResultHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\IStoreCondition.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\OxyAlvVolumeHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\OxyConsResultHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\OxyTreeVolumeHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\ResultHandlerUtility.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\TimeStoreCondition.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\CauchyProblemMethod.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\HybridHypEquation.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\HyperbolicEquation.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\NewtonMethod.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\RungeKutta23Method.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockEquations\Numerics\SweepMethod.h">
+      <Filter>BlockEquations\Numerics</Filter>
+    </ClInclude>
+    <ClInclude Include="NetTopology\Results\TidalVolumeHandler.h">
+      <Filter>NetTopology\Results</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilders\FullBronchTreeBuilder.h">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilders\SimpleBronchTreeBuilder.h">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilders\IBronchTreeBuilder.h">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilders\Lungs8TreeBuilder.h">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeBuilders\LungsNTreeBuilder.h">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NetTopology\Loaders\TreeDataLoader.cpp">
+      <Filter>NetTopology\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockEquations\Motion\IncompFluidEquation.cpp">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockEquations\Motion\LungsFluidEquation.cpp">
+      <Filter>BlockEquations\Motion</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockEquations\MassTransfer\MassTransferEquation.cpp">
+      <Filter>BlockEquations\MassTransfer</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockEquations\Motion\Breath\StandartBreath.cpp">
+      <Filter>BlockEquations\Motion\Breath</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeBuilders\FullBronchTreeBuilder.cpp">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeBuilders\SimpleBronchTreeBuilder.cpp">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeBuilders\Lungs8TreeBuilder.cpp">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeBuilders\LungsNTreeBuilder.cpp">
+      <Filter>NetTopology\TreeBuilders</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Connections\NervousTissue\NervousTissueCnFactory.cpp">
+      <Filter>Connections\NervousTissue</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\NervousBlood\NervousBloodCnFactory.cpp">
+      <Filter>Connections\NervousBlood</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodTissue\BloodTissueCnFactory.cpp">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClCompile>
+    <ClCompile Include="Builders\HumanSysBuilder.cpp">
+      <Filter>Systems\Builders</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\HumanSys.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BaseBiochemistryModel.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\NervousSystem\BloodDivNervousSys.cpp">
+      <Filter>Systems\NervousSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\AvgTankBlood.cpp">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\TissueSystem\BaseTissueSys.cpp">
+      <Filter>Systems\TissueSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodTissue\BaseBloodTissueCn.cpp">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeSpan.cpp" />
+    <ClCompile Include="Postprocessing\PostprocessUtility.h">
+      <Filter>Postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="Builders\WorkHumanSysBuilder.cpp">
+      <Filter>Systems\Builders</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\BodyBloodSys.cpp">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodTissue\BodyBloodBaseTissueCn.cpp">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\BodyBioChemBloodSys.cpp">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodTissue\BodyBioChemTissueCn.cpp">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\ImplicitHumanSys.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\BloodCompartment.cpp">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\CompartmentsBloodSys.cpp">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\O2HbEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\Co2BbEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BbEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\LumpImplicitHumanSys.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodRespiratory\BloodRespiratoryCnFactory.cpp">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespAvgTankBloodCn.cpp">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespBodyBioChem.cpp">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\BloodRespiratory\Mipt1DRespBodyBloodCn.cpp">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Connections\NervousRespiratory\NervousRespiratoryCnFactory.cpp">
+      <Filter>Connections\NervousRespiratory</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RespiratorySystem\LumpRespSys.cpp">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\RespiratorySystem\MiptNet1DRespSys.cpp">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\WorkLoadHumanSys.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlCo2BbEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlO2HbEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\WlLaEquations.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\BloodSystem\Biochemistry\BioChemConst.cpp">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\NervousSystem\WorkLoadNervousSys.cpp">
+      <Filter>Systems\NervousSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\StandartHumanSys.cpp">
+      <Filter>Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="Systems\WorkLoad\ZoneWorkLoad.cpp">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{29b66937-60ea-4a84-90c7-4953147babf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections">
+      <UniqueIdentifier>{db9252b6-3ecc-43a9-a927-830dbb99a387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\BloodSystem">
+      <UniqueIdentifier>{9cc0605c-29b6-4d7c-9be6-45863cecae9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\TissueSystem">
+      <UniqueIdentifier>{1eaff474-84d5-4370-a66c-af815f4b1845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\NervousSystem">
+      <UniqueIdentifier>{a6f3d60d-f08b-40b9-b942-b498a094c5ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections\BloodTissue">
+      <UniqueIdentifier>{e1498a50-745a-4491-8ae4-f5908d46609d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections\NervousBlood">
+      <UniqueIdentifier>{530b473e-3b00-4f4c-a2fd-4271fe3c6ed1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections\NervousTissue">
+      <UniqueIdentifier>{21159f15-bc89-4379-af6a-5495fd94eba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Builders">
+      <UniqueIdentifier>{b137c294-f5b6-490e-a2a5-ce9fee279732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\BloodSystem\Biochemistry">
+      <UniqueIdentifier>{f1263e46-cee1-4c1c-a5d1-c1c76c261176}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Postprocessing">
+      <UniqueIdentifier>{b8837433-496d-4f56-9bcd-f7ed85de55fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\RespiratorySystem">
+      <UniqueIdentifier>{52f6f17c-4d35-4657-9518-e443c1d0bd0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections\BloodRespiratory">
+      <UniqueIdentifier>{307039e6-df0e-4a7b-bfee-454f74bc0313}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Connections\NervousRespiratory">
+      <UniqueIdentifier>{bb5a7b74-53fe-4679-945a-9c25ce48fc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\WorkLoad">
+      <UniqueIdentifier>{b83dc9b8-1923-4dc3-865b-aab2acffb21c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Systems\ISystem.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\IConnection.h">
+      <Filter>Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\IHumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\IBloodSys.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\TissueSystem\ITissueSys.h">
+      <Filter>Systems\TissueSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\NervousSystem\INervousSys.h">
+      <Filter>Systems\NervousSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodTissue\IBloodTissueCn.h">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousBlood\INervousBloodCn.h">
+      <Filter>Connections\NervousBlood</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\IConnectionFactory.h">
+      <Filter>Connections</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodTissue\BloodTissueCnFactory.h">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousBlood\NervousBloodCnFactory.h">
+      <Filter>Connections\NervousBlood</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousTissue\NervousTissueCnFactory.h">
+      <Filter>Connections\NervousTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousTissue\INervousTissueCn.h">
+      <Filter>Connections\NervousTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeSpan.h" />
+    <ClInclude Include="Builders\ISysBuilder.h">
+      <Filter>Systems\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="Builders\IHumanSysBuilder.h">
+      <Filter>Systems\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="Builders\HumanSysBuilder.h">
+      <Filter>Systems\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\HumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BaseBiochemistryModel.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\NervousSystem\BloodDivNervousSys.h">
+      <Filter>Systems\NervousSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\AvgTankBlood.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\TissueSystem\BaseTissueSys.h">
+      <Filter>Systems\TissueSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousBlood\BaseNervousBloodCn.h">
+      <Filter>Connections\NervousBlood</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousTissue\BaseNervousTissueCn.h">
+      <Filter>Connections\NervousTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodTissue\BaseBloodTissueCn.h">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\ISaveCondition.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\TimeSavecondition.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\IPostprocess.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\BasePostprocess.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Builders\WorkHumanSysBuilder.h">
+      <Filter>Systems\Builders</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\BodyBloodSys.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodTissue\BodyBloodBaseTissueCn.h">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\BodyBioChemBloodSys.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodTissue\BodyBioChemTissueCn.h">
+      <Filter>Connections\BloodTissue</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\ImplicitHumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\BloodCompartment.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\CompartmentsBloodSys.h">
+      <Filter>Systems\BloodSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\O2HbEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BioChemConst.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\Co2BbEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\BbEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\LumpImplicitHumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodRespiratory\BloodRespiratoryCnFactory.h">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodRespiratory\IBloodRespiratoryCn.h">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespAvgTankBloodCn.h">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespBodyBioChem.h">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\BloodRespiratory\Mipt1DRespBodyBloodCn.h">
+      <Filter>Connections\BloodRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousRespiratory\BaseNervousRespiratoryCn.h">
+      <Filter>Connections\NervousRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousRespiratory\INervousRespiratoryCn.h">
+      <Filter>Connections\NervousRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Connections\NervousRespiratory\NervousRespiratoryCnFactory.h">
+      <Filter>Connections\NervousRespiratory</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RespiratorySystem\IAirEnv.h">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RespiratorySystem\IRespiratorySys.h">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RespiratorySystem\LumpRespSys.h">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RespiratorySystem\MiptNet1DRespSys.h">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\RespiratorySystem\NormAirEnv.h">
+      <Filter>Systems\RespiratorySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoad\IWorkLoad.h">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoad\StandartWorkLoad.h">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoadHumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlCo2BbEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlO2HbEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoad\StoreWorkLoad.h">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\BloodSystem\Biochemistry\WlLaEquations.h">
+      <Filter>Systems\BloodSystem\Biochemistry</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\OxyConsPostprocess.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\DioxProdPostprocess.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Postprocessing\HipoxiaPostprocess.h">
+      <Filter>Postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\NervousSystem\WorkLoadNervousSys.h">
+      <Filter>Systems\NervousSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\StandartHumanSys.h">
+      <Filter>Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoad\IntervalWorkLoad.h">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClInclude>
+    <ClInclude Include="Systems\WorkLoad\ZoneWorkLoad.h">
+      <Filter>Systems\WorkLoad</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

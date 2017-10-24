@@ -1,0 +1,56 @@
+{
+  "NumericalMethod": {
+    "TimeStep": "0.1",
+    "Time": "600",
+    "SteadyStateTime": "50"
+  },
+  "Preprocessing": { "ExperementalData": "./6csv1.csv" },
+  "Postprocessing": {
+    "SavePath": "./ResultsSport1",
+    "SavePeriod": "5"
+  },
+  "Model": {
+    
+    "Anthropometry": {
+      "Height": "1.66",
+      "Weight": "61.7"
+    },
+    "Lungs": {
+      "BreathRate": "17.3",
+      "BreathVolume": 14.992443240979272,
+      "RER": 0.8449350968314389,
+      "O2Uptake": 0.29649181285777726
+    },
+    "Blood": {
+      "Biochemistry": {
+        "O2": "0.22086495999999998",
+        "CO2": "0.47739120000000002",
+        "HB": "0.0025115944400000002",
+        "HCO3": "0.020390519999999999",
+        "H": "3.8579884180000002e-08",
+        "LA": "0.0021"
+      },
+      "Muscle": {
+        "Efficiency": 0.22974286755269466,
+        "BAirWorkCoef": 1.543196480705961,
+        "CAirWorkCoef": 0.015157389236198172,
+        "LactateTreshold": "12.1",
+        "LaUtilization": 0.00027306622679211247,
+        "Co2LaUtilization": 2.406973795082147,
+        "O2LaUtilization": 0.007372788123387037,
+        "Wmax": 15
+      }
+    },
+    "Regulation": {
+      "UseExperiment": 0,
+      "Lungs": {
+        "Nco2bs": 0.4,
+        "Tco2bs": 41.83064562114284,
+        "Tco2ps": 84.07369955832192,
+        "Nco2ps": 0.25,
+        "Pco20": 72.3954114618507,
+        "Po20": 44.68205836661121
+      }
+    }
+  }
+}
